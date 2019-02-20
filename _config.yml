@@ -23,6 +23,8 @@ minimax:
 # this and add the path to the pages in order as they should show up
 header_pages:
   - about.html
+  - tags.html
+  - categories.html
 
 # Build settings
 theme: jekyll-theme-minimax
@@ -30,3 +32,13 @@ theme: jekyll-theme-minimax
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-archives
+
+# Jekyll Archives
+jekyll-archives:
+  enabled: 
+    - categories
+    - tags
+  layouts: 
+    tag: tag-archive
+    category: tag-archive

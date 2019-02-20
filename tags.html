@@ -1,0 +1,6 @@
+---
+layout: page
+title: Tags
+---
+
+{% include tag_cloud.html %}
