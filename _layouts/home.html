@@ -10,9 +10,10 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    {%- assign posts_limit = site.minimax.posts_limit | default: 10 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Recent Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in site.posts limit: posts_limit -%}
       <li>
         {%- assign date_format = site.minimax.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -27,7 +28,7 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
+    <p><a href="/tags.html">More posts...</a></p>
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
   {%- endif -%}
 

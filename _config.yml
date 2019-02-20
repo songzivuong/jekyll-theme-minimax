@@ -14,6 +14,7 @@ show_excerpts: false # set to true to show excerpts on the homepage
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 minimax:
   date_format: "%b %-d, %Y"
+  posts_limit: 3
   social_links:
     twitter: jekyllrb
     github:  jekyll
