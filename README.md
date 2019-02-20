@@ -26,7 +26,22 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+- [Tag Cloud](#tag-cloud)
+
+### Tag Cloud
+
+In anywhere you want to show the tag cloud, insert `{% include tag_cloud.html %}`. 
+
+You can manually write a page for each tag to list all posts that are labeled with the tag. For example, you want to show all posts labeled with `jekyll`, then create a page `tag/jekyll.md`:
+
+```
+---
+layout: tag_page
+tag: jekyll
+---
+```
+
+*Want free your hands*? Run a [script](scripts/tag-generator.py) to generate all tag pages automatically: `python scripts/tag-generator.py`.
 
 ## Contributing
 
