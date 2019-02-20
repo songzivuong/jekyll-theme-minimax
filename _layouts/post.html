@@ -12,11 +12,11 @@ layout: default
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}
+      {%- endif -%}&nbsp;
       <span class="post-tags">[&nbsp;
         {% for tag in page.tags %}
           {% capture tag_name %}{{ tag }}{% endcapture %}
-          <nobr>#{{ tag_name }}</nobr>&nbsp;
+          <a href="/tag/{{ tag_name }}"><nobr>#{{ tag_name }}</nobr></a>&nbsp;
         {% endfor %}
       ]</span>
     </p>
