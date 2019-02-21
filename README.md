@@ -27,6 +27,7 @@ Or install it yourself as:
 ## Usage
 
 - [Tag Cloud](#tag-cloud)
+- [Mathjax](#mathjax)
 
 ### Tag Cloud
 
