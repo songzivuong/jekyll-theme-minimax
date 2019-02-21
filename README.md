@@ -28,6 +28,7 @@ Or install it yourself as:
 
 - [Tag Cloud](#tag-cloud)
 - [Mathjax](#mathjax)
+- [Table of Contents](#table-of-contents)
 
 ### Tag Cloud
 
@@ -47,6 +48,16 @@ tag: jekyll
 ### Mathjax
 
 Minimax support Mathjax. You can write mathematical formulas in your posts if you set the `math` front matter to be `true` in these posts. [Example](_posts/2019-02-21-test-mathjax.md).
+
+### Table of Contents
+
+You can insert `{% include toc.html %}` at anywhere you want to automatically generate a table of contents. Don't forget specify the below lines in `_config.yml`.
+
+```
+markdown: kramdown
+kramdown:
+  parse_block_html: true
+```
 
 ## Contributing
 
