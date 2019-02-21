@@ -43,6 +43,10 @@ tag: jekyll
 
 *Want free your hands*? Run a [script](scripts/tag-generator.py) to generate all tag pages automatically: `python scripts/tag-generator.py`.
 
+### Mathjax
+
+Minimax support Mathjax. You can write mathematical formulas in your posts if you set the `math` front matter to be `true` in these posts. [Example](_posts/2019-02-21-test-mathjax.md).
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
