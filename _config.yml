@@ -25,6 +25,7 @@ minimax:
 header_pages:
   - about.html
   - tags.html
+  - categories.html
 
 # Build settings
 theme: jekyll-theme-minimax

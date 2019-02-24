@@ -2,6 +2,17 @@
 
 Minimax is a Jekyll theme based on [Minima](https://github.com/jekyll/minima) with a little extension.
 
+- [jekyll-theme-minimax](#jekyll-theme-minimax)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Tag Cloud](#tag-cloud)
+    - [Category Archive](#category-archive)
+    - [Mathjax](#mathjax)
+    - [Table of Contents](#table-of-contents)
+  - [Contributing](#contributing)
+  - [Development](#development)
+  - [License](#license)
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -26,10 +37,6 @@ Or install it yourself as:
 
 ## Usage
 
-- [Tag Cloud](#tag-cloud)
-- [Mathjax](#mathjax)
-- [Table of Contents](#table-of-contents)
-
 ### Tag Cloud
 
 In anywhere you want to show the tag cloud, insert `{% include tag_cloud.html %}`. 
@@ -44,6 +51,10 @@ tag: jekyll
 ```
 
 *Want free your hands*? Run a [script](scripts/tag-generator.py) to generate all tag pages automatically: `python scripts/tag-generator.py`.
+
+### Category Archive
+
+`{% include category_archive.html %}`
 
 ### Mathjax
 

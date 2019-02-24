@@ -1,0 +1,12 @@
+<div class="category-archive">
+    {% assign categories = site.categories | sort %}
+    <ul>
+    {% for category in categories %}
+        <li>
+            <a href="/category/{{ category | first | slugify }}.html">
+                {{ category[0] | replace: '-', ' ' }}
+            </a>({{ category | last | size }})
+        </li>
+    {% endfor %}
+    </ul>
+</div>
